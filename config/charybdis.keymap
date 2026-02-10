@@ -1,7 +1,7 @@
 #include <dt-bindings/zmk/mouse.h>
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL -1  // 세로 스크롤 방향 반전 + 기본 속도(절댓값이 클수록 빠름)
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 2200   // 기본 커서 이동 속도(필요시 조절)
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 6000   // 기본 커서 이동 속도(필요시 조절)
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
