@@ -1,5 +1,5 @@
 #include <dt-bindings/zmk/mouse.h>
-#include <input/processors.dtsi>
+
 
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL -1  // 세로 스크롤 방향 반전 + 기본 속도(절댓값이 클수록 빠름)
@@ -117,18 +117,4 @@
 };
 
 
-&tmv_coarse {
-  /* 커서만 1.5배 (3/2) */
-  input-processors = <&zip_xy_scaler 3 2>;
-};
-
-&tmv_fine {
-  /* 파인 모드는 1.0배 유지(또는 더 느리게도 가능) */
-  input-processors = <&zip_xy_scaler 1 1>;
-};
-
-&tsl {
-  /* 스크롤만 1/3로 감속 */
-  input-processors = <&zip_scroll_scaler 1 3>;
-};
 
